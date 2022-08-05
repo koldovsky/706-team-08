@@ -71,6 +71,10 @@
     color: rgb(255, 91, 46);
 }
 
+.contact-number:hover {
+    text-decoration: underline;
+}
+
 .contact-service-button {
     display: flex;
     flex-direction: column;
