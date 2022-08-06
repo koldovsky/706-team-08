@@ -3,14 +3,14 @@
     padding: 0 40px;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .contact-panel-container {
         margin: 0 15px;
     }
 }
 
 .contact-panel {
-    background-color: white;
+    background-color: var( --card-background-color);
     padding: 52px 40px;
     margin: auto;
     border-radius: 35px;
@@ -26,7 +26,7 @@
 .contact-panel-decoration {
     display: flex;
     justify-content: center;
-    color: rgb(255, 91, 46);
+    color: var(--button-color);
     font-family: Poppins, sans-serif;
     font-size: 40px;
     font-weight: bold;
@@ -36,21 +36,21 @@
     display: flex;
     justify-content: center;
     font-family: Rubik, sans-serif;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
-    color: rgb(4, 15, 115);
+    color: var(--title-color);
     text-align: center;
 }
 
-/*@media(min-width:992px) {
+@media(min-width:992px) {
     .panel-heading-text {
         font-size: 38px;
     }
-}*/
+}
 
-@media(min-width:767px) {
+@media(max-width:768px) {
     .panel-heading-text {
-        font-size: 34px;
+        font-size: 30px;
     }
 }
 
@@ -63,12 +63,12 @@
 }
 
 .contact-text {
-    color: rgb(66, 72, 117);
+    color: var(--questions-date-font);
 }
 
 .contact-number {
     text-decoration: none;
-    color: rgb(255, 91, 46);
+    color: var(--button-color);
 }
 
 .contact-number:hover {
@@ -97,8 +97,8 @@
 
 .contact-button {
     text-decoration: none;
-    color: white;
-    background-color: rgb(255, 91, 46);
+    color: var(--card-background-color);
+    background-color: var(--button-color);
     border-radius: 25px;
     margin: 10px 0;
     padding: 16px 28px;
@@ -106,14 +106,18 @@
 }
 
 .contact-button:hover {
-    background-color: rgb(66, 72, 117);
+    background-color: var(--questions-date-font);
 }
 
 .service-button {
     text-decoration: none;
-    color: rgb(4, 15, 115);
-    background-color: rgb(251, 237, 223);
+    color: var(--title-color);
+    background-color: var(--service-button-background-color);
     border-radius: 25px;
     margin: 10px 0;
     padding: 16px 28px;
+}
+
+.service-button:hover {
+    background-color: rgba(255, 246, 237, 0.959);;
 }
