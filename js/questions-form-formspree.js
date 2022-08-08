@@ -1,9 +1,22 @@
 (function () {
     const form = document.querySelector(".main__questions-form");
     function handleSubmit(event) {
+        const status = document.querySelector(".questions-form-status");
+        let dateSelected = document.forms["main__questions-form"]["user-date"].value;
+        if (Date.parse(dateSelected) <= Date.now()) {
+            event.preventDefault();
+            status.innerHTML = "Please choose date starting from tomorrow";
+            return;
+        }
+        let numberInputed = document.forms["main__questions-form"]["user-phone"].value;
+        if ((Number(numberInputed) != parseInt("0" + numberInputed)) || numberInputed.length < 10) {
+
+            event.preventDefault();
+            status.innerHTML = "Please input phone number <br> (in format xxxxxxxxxx)";
+            return;
+        }
         if (!form.checkValidity()) return;
         event.preventDefault();
-        const status = document.querySelector(".questions-form-status");
         fetch("https://formspree.io/f/xlevrrop", {
             method: "POST",
             body: new FormData(form),

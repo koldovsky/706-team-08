@@ -157,3 +157,11 @@
     color: var(--card-background-color);
     background-color: var(--dark-description);
 }
+
+.questions-form-status {
+    --main__questions-form-field-text: #424875;
+    --main__questions-form-field-font: Poppins, sans-serif;
+    color: var(--main__questions-form-field-text);
+    font-family: var(--main__questions-form-field-font);
+    font-size: 14px;
+}
