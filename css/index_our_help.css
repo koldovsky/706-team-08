@@ -1,6 +1,5 @@
 .get-start {
   min-width: 320px;
-  min-height: 1131;
   padding: 60px 0;
 }
 
@@ -131,17 +130,9 @@
     font-size: 15px;
   }
 
-  .icon__text {
-    color: var(--line-color);
-  }
-
-  .colored-text {
-    color: var(--line-color);
-  }
-
   .logo-heart {
     width: 13px;
     margin-right: 5px;
-    display: inline-block;
+    
   }
 }
