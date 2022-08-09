@@ -4,14 +4,18 @@
     let btn_care = document.getElementById("main__articles_btn_care");
     let btn_health = document.getElementById("main__articles_btn_health");
     let span = document.getElementsByClassName("main__articles_modal_close")[0];
+    let articles_subscribe = document.getElementById("main__articles_modal_form-button-hover");
     btn_meal.onclick = function () {
         modal.style.display = "block";
+        event.preventDefault();
     }
     btn_care.onclick = function () {
         modal.style.display = "block";
+        event.preventDefault();
     }
     btn_health.onclick = function () {
         modal.style.display = "block";
+        event.preventDefault();
     }
     span.onclick = function () {
         modal.style.display = "none";
